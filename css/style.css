@@ -14,35 +14,55 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-#logo-navbar{
+.navbar {
+    padding: 16px, 24px, 16px, 24px !important;
+}
+
+#logo-navbar {
     width: 4em;
 }
 
-.main-nav-container{
+.nav-logo-container {
+    display: none;
+}
+
+.main-nav-container {
     justify-content: center !important;
+    padding: 0;
 }
 
-.main-nav-container .main-nav-list{
+.main-nav-container .main-nav-list {
     justify-content: space-evenly;
-    padding: 0 10em;
 }
 
-.main-nav-list a span{
+.main-nav-list {
+    flex-wrap: nowrap;
+}
+.main-nav-list a span {
     display: none;
     color: var(--blue);
 }
 
-.main-nav-list a i{
+.main-nav-list a i {
     color: #000000;
 }
 
-.navbar-active-item{
+.navbar-active-item {
     background-color: var(--black);
     border-radius: 80px;
 }
-.navbar-active-item a span{
+.navbar-active-item a span {
     display: inline;
 }
-.navbar-active-item a i{
+.navbar-active-item a i {
     color: var(--blue);
+}
+
+@media (min-width: 768px) {
+    .nav-logo-container {
+        display: inline;
+    }
+    .main-nav-container .main-nav-list {
+        padding: 0 10em;
+    }
 }
