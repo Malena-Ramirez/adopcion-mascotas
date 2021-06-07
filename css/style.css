@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #fec7d7;
+    --secondary-color: #a786df;
+    --tertiary-color: #d9d4e7;
+    --green: #85d1ce;
+    --blue: #91c1d7;
+    --green: #85d1ce;
+    --white: #fffffe;
+    --black: #0e172c;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Nunito", sans-serif;
+}
+
+#logo-navbar{
+    width: 4em;
+}
+
+.main-nav-container{
+    justify-content: center !important;
+}
+
+.main-nav-container .main-nav-list{
+    justify-content: space-evenly;
+    padding: 0 10em;
+}
+
+.main-nav-list a span{
+    display: none;
+    color: var(--blue);
+}
+
+.main-nav-list a i{
+    color: #000000;
+}
+
+.navbar-active-item{
+    background-color: var(--black);
+    border-radius: 80px;
+}
+.navbar-active-item a span{
+    display: inline;
+}
+.navbar-active-item a i{
+    color: var(--blue);
+}
