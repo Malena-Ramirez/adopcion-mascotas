@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./css/style.css" />
@@ -17,18 +18,30 @@
                     <a class="navbar-brand col-1" href="#">
                         <img src="img/logo.png" id="logo-navbar" alt="Logo de la aplicación" />
                     </a>
-                    <ul class="nav col-10">
-                        <li class="nav-item">
-                            <a class="nav-link list-group-item-action" aria-current="page" href="#"><img src="img/home.svg" alt="Icono de home"> Home</a>
+                    <ul class="nav col-10 main-nav-list">
+                        <li class="nav-item navbar-active-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="bi bi-house-door"></i>
+                                <span>Home</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link list-group-item-action" href="#"><img src="img/mensajes.svg" alt="Icono de mensajes"> Mensajes</a>
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-chat"></i>
+                                <span>Mensajes</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link list-group-item-action" href="#"><img src="img/favs.svg" alt="Icono de favoritos"> Favoritos</a>
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-heart"></i>
+                                <span>Favoritos</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link list-group-item-action" href="#"><img src="img/perfil.svg" alt="Icono de perfil">Perfil</a>
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-person"></i>
+                                <span>Perfil</span>
+                            </a>
                         </li>
                     </ul>
                 </div>

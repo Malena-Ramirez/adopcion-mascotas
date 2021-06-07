@@ -22,11 +22,27 @@ body {
     justify-content: center !important;
 }
 
-.main-nav-container ul{
+.main-nav-container .main-nav-list{
     justify-content: space-evenly;
     padding: 0 10em;
 }
-/* .main-nav-container>ul>a{
-    border: 1px solid black;
+
+.main-nav-list a span{
+    display: none;
+    color: var(--blue);
+}
+
+.main-nav-list a i{
+    color: #000000;
+}
+
+.navbar-active-item{
+    background-color: var(--black);
     border-radius: 80px;
-} */
+}
+.navbar-active-item a span{
+    display: inline;
+}
+.navbar-active-item a i{
+    color: var(--blue);
+}
