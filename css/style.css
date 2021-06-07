@@ -14,3 +14,10 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+.main-nav-container{
+    justify-content: flex-start !important;
+}
+
+.main-nav-container ul{
+    justify-content: space-evenly;
+}
