@@ -14,10 +14,19 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+#logo-navbar{
+    width: 4em;
+}
+
 .main-nav-container{
-    justify-content: flex-start !important;
+    justify-content: center !important;
 }
 
 .main-nav-container ul{
     justify-content: space-evenly;
+    padding: 0 10em;
 }
+/* .main-nav-container>ul>a{
+    border: 1px solid black;
+    border-radius: 80px;
+} */
