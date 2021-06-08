@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    padding: 16px, 24px, 16px, 24px !important;
+    padding: 16px 24px;
 }
 
 #logo-navbar {
@@ -40,7 +40,8 @@ body {
 }
 .main-nav-list a span {
     display: none;
-    color: var(--blue);
+    color: var(--green);
+    font-size: 0.875rem;
 }
 
 .main-nav-list a i {
@@ -58,11 +59,91 @@ body {
     color: var(--blue);
 }
 
+main{
+    padding: 0 24px;
+}
+
+#index-main p{
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 33px;
+    margin: 48px 0 32px;
+}
+
+#index-main h1{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    max-width: 800px;
+    margin: auto;
+}
+
+.categories-container li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 8px;
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.categories-container li:hover{
+    transform: translateY(-5px);
+    transition: all 0.7s;
+}
+
+#dogs-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 8px 0;
+}
+
+#cats-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 8px 0;
+}
+
+.categories-container li img{
+    width: 40px;
+}
+
+.inactive-categorie{
+    opacity: 0.5;
+}
+
 @media (min-width: 768px) {
     .nav-logo-container {
         display: inline;
     }
+
     .main-nav-container .main-nav-list {
         padding: 0 10em;
     }
+
+    #index-main{
+        text-align: center;
+    }
+
 }
