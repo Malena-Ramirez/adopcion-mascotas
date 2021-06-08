@@ -140,16 +140,18 @@ main{
     margin-bottom: 96px;
 }
 
-.img-card-container {
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
-    z-index: 10;
+.img-card-container:nth-child(odd){
+    margin-bottom: 24px;
+}
+
+.img-card-container:nth-child(even){
+    margin-top: 24px;
 }
 
 .img-card-container img{
-    border-radius: 16px; 
-    z-index: 1;
+    border-radius: 16px;
 }
+
 
 @media (min-width: 768px) {
     .nav-logo-container {
