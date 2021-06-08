@@ -79,11 +79,13 @@ main{
 .categories-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 16px;
+    gap: 10px;
     padding: 0;
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
+    max-width: 800px;
+    margin: auto;
 }
 
 .categories-container li{
@@ -93,6 +95,12 @@ main{
     list-style: none;
     border-radius: 8px;
     background-color: var(--black);
+    cursor: pointer;
+}
+
+.categories-container li:hover{
+    transform: translateY(-5px);
+    transition: all 0.7s;
 }
 
 #dogs-img-container {
@@ -103,7 +111,7 @@ main{
     border-radius: 50%;
     width: 64px;
     height: 64px;
-    margin: 8pxs;
+    margin: 8px 0;
 }
 
 #cats-img-container {
@@ -114,18 +122,28 @@ main{
     border-radius: 50%;
     width: 64px;
     height: 64px;
-    margin: 8px;
+    margin: 8px 0;
 }
 
 .categories-container li img{
     width: 40px;
 }
 
+.inactive-categorie{
+    opacity: 0.5;
+}
+
 @media (min-width: 768px) {
     .nav-logo-container {
         display: inline;
     }
+
     .main-nav-container .main-nav-list {
         padding: 0 10em;
     }
+
+    #index-main{
+        text-align: center;
+    }
+
 }
