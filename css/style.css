@@ -81,11 +81,14 @@ main{
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
     padding: 0;
+    max-width: 800px;
+    margin: 0 auto 24px;
+}
+
+.categories-container h2{
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
-    max-width: 800px;
-    margin: 0 auto 24px;
 }
 
 .categories-container li{
@@ -99,7 +102,7 @@ main{
 }
 
 .categories-container li:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     transition: all 0.7s;
 }
 
