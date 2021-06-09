@@ -197,6 +197,11 @@ main{
     align-items: center;
 }
 
+.main-messages-container a{
+    text-decoration: none;
+    color: var(--black);
+}
+
 .message-container img{
     width: 64px;
     height: 64px;
