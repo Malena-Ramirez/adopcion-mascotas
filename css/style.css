@@ -63,7 +63,7 @@ main{
     padding: 0 24px;
 }
 
-#index-main p{
+.adopting-text{
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 33px;
@@ -79,13 +79,16 @@ main{
 .categories-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    gap: 16px;
     padding: 0;
+    max-width: 600px;
+    margin: 0 auto 24px;
+}
+
+.categories-container h2{
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
-    max-width: 800px;
-    margin: auto;
 }
 
 .categories-container li{
@@ -99,7 +102,7 @@ main{
 }
 
 .categories-container li:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     transition: all 0.7s;
 }
 
@@ -133,6 +136,59 @@ main{
     opacity: 0.5;
 }
 
+.pets-cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto 96px;
+}
+
+.img-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.img-card-container img{
+    border-radius: 16px;
+    grid-area: 1/1/5/2;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    grid-area: 1/1/5/2;
+}
+
+.cards-text-container{
+    font-size: 0.875rem;
+    color: var(--white);
+    margin: 0 16px 16px 16px;
+    grid-area: 4/1/5/2;
+}
+
+.cards-text-container h3{
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.cards-text-container p{
+    margin-bottom: 0;
+}
+
+.img-card-container:nth-child(odd){
+    margin-bottom: 24px;
+}
+
+.img-card-container:nth-child(even){
+    margin-top: 24px;
+}
+
+
 @media (min-width: 768px) {
     .nav-logo-container {
         display: inline;
@@ -145,5 +201,14 @@ main{
     #index-main{
         text-align: center;
     }
-
+    .categories-container li{
+        justify-content: flex-start;
+        padding: 0 30px;
+    }
+    .categories-container h2{
+        padding-left: 20px;
+    }
+    .pets-cards-container{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
