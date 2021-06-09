@@ -81,7 +81,7 @@ main{
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
     padding: 0;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 24px;
 }
 
@@ -140,7 +140,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-    margin-bottom: 96px;
+    max-width: 1000px;
+    margin: 0 auto 96px;
 }
 
 .img-card-container{
@@ -200,5 +201,14 @@ main{
     #index-main{
         text-align: center;
     }
-
+    .categories-container li{
+        justify-content: flex-start;
+        padding: 0 30px;
+    }
+    .categories-container h2{
+        padding-left: 20px;
+    }
+    .pets-cards-container{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
