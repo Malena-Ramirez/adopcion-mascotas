@@ -426,9 +426,55 @@ section.img-profile-container {
 	object-fit: cover;
 }
 
-/* .pet-detail-text{
+.pet-detail-text{
+    background-color: var(--white);
+    padding: 16px 24px;
+    border-radius: 16px 16px 0px 0px;
+}
 
-} */
+.pet-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pet-name{
+    display: flex;
+}
+
+.pet-name-container>.pet-name>h1{
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 33px;
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+.pet-name-container>.pet-name>img{
+    width: 32px;
+    height: 32px;
+}
+
+.favorite-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.favorite-icon:hover{
+    cursor: pointer;
+}
+
+.favorite-icon>i{
+    color: var(--tertiary-color);
+    margin-top: 5px;
+}
 
 @media (min-width: 768px) {
     .nav-logo-container {
