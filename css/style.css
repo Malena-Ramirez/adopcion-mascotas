@@ -226,17 +226,14 @@ main{
 
 .message-info-text p{
     font-size: 0.875rem;
-    width: 210px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     margin-bottom: 0;
+    line-height: 19px;
 }
 
 #vector{
     width: 6px;
     height: 12px;
-    margin-left: 17px;
+    margin: 34px 17px;
 }
 
 @media (min-width: 768px) {
