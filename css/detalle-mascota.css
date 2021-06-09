@@ -196,3 +196,7 @@
     border-radius: 98px;
     text-align: center;
 }
+
+.conctac-btn>a:hover{
+    cursor: pointer;
+}
