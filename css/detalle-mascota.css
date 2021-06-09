@@ -127,3 +127,7 @@
     width: 40px;
     height: 40px;
 }
+
+.pet-history-container>p{
+    margin: 8px 0 32px;
+}
