@@ -137,7 +137,6 @@
 .contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .profile-contact-container {
@@ -153,6 +152,7 @@
     font-size: 0.688rem;
     line-height: 15px;
     margin-bottom: 0;
+    color: var(--grey);
 }
 
 .name-profile-contact {
@@ -160,4 +160,21 @@
     line-height: 19px;
     font-weight: 700;
     margin-bottom: 0;
+}
+
+.conctac-btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 26px;
+}
+
+.conctac-btn a{
+    box-sizing: border-box;
+    width: 155px;
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 16px;
+    border-radius: 98px;
+    text-align: center;
 }
