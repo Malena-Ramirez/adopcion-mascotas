@@ -162,8 +162,8 @@ main{
 .cards-text-container{
     font-size: 0.875rem;
     color: var(--white);
-    margin: 0 16px 16px 16px
-    /* grid-area: 4/1/5/2; */
+    margin: 0 16px 16px 16px;
+    grid-area: 4/1/5/2;
 }
 
 .cards-text-container h3{
