@@ -59,39 +59,42 @@ body {
     color: var(--blue);
 }
 
-main{
+main {
     padding: 0 24px;
 }
 
-.adopting-text, #favorites-main h1, #messages-main h1, #profile-main h1 {
+.adopting-text,
+#favorites-main h1,
+#messages-main h1,
+#profile-main h1 {
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 33px;
     margin: 48px 0 32px;
 }
 
-#index-main h1{
+#index-main h1 {
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 25px;
 }
 
-.categories-container{
+.categories-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 0;
     max-width: 600px;
     margin: 0 auto 24px;
 }
 
-.categories-container h2{
+.categories-container h2 {
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
 }
 
-.categories-container li{
+.categories-container li {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -101,7 +104,7 @@ main{
     cursor: pointer;
 }
 
-.categories-container li:hover{
+.categories-container li:hover {
     transform: translateY(-3px);
     transition: all 0.7s;
 }
@@ -128,15 +131,15 @@ main{
     margin: 8px 0;
 }
 
-.categories-container li img{
+.categories-container li img {
     width: 40px;
 }
 
-.inactive-categorie{
+.inactive-categorie {
     opacity: 0.5;
 }
 
-.pets-cards-container{
+.pets-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
@@ -144,18 +147,18 @@ main{
     margin: 0 auto 96px;
 }
 
-.img-card-container{
+.img-card-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.img-card-container img{
+.img-card-container img {
     border-radius: 16px;
     grid-area: 1/1/4/2;
 }
 
-.gradient{
+.gradient {
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -163,7 +166,7 @@ main{
     grid-area: 1/1/4/2;
 }
 
-.cards-text-container{
+.cards-text-container {
     font-size: 0.875rem;
     color: var(--white);
     margin: 0 16px 16px 16px;
@@ -171,25 +174,25 @@ main{
     align-self: end;
 }
 
-.cards-text-container h3{
+.cards-text-container h3 {
     font-size: 0.875rem;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.cards-text-container p{
+.cards-text-container p {
     margin-bottom: 0;
 }
 
-.img-card-container:nth-child(odd){
+.img-card-container:nth-child(odd) {
     margin-bottom: 24px;
 }
 
-.img-card-container:nth-child(even){
+.img-card-container:nth-child(even) {
     margin-top: 24px;
 }
 
-.message-container{
+.message-container {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
@@ -200,83 +203,84 @@ main{
     margin: auto;
 }
 
-.main-messages-container a{
+.main-messages-container a {
     text-decoration: none;
     color: var(--black);
 }
 
-.message-container img{
+.message-container img {
     margin: 8px;
 }
 
-.message-info-text div{
+.message-info-text div {
     display: flex;
     justify-content: space-between;
 }
 
-.message-info-text h2, .img-chat-container h1{
+.message-info-text h2,
+.img-chat-container h1 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.message-info-text span{
+.message-info-text span {
     font-size: 0.688rem;
 }
 
-.message-info-text p{
+.message-info-text p {
     font-size: 0.875rem;
     margin-bottom: 0;
     line-height: 19px;
 }
 
-#vector{
+#vector {
     width: 6px;
     height: 12px;
     margin: 34px 17px;
 }
 
-.profile-img{
-    border: 3px solid #85D1CE;
+.profile-img {
+    border: 3px solid #85d1ce;
     box-sizing: border-box;
     width: 64px;
     height: 64px;
     border-radius: 50%;
 }
 
-.profile-img-container{
+.profile-img-container {
     background-color: var(--white);
     margin-bottom: 24px;
 }
 
-.back-btn{
+.back-btn {
     margin: 24px;
     position: absolute;
 }
 
-.img-chat-container{
+.img-chat-container {
     padding: 24px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.chat-container{
-   padding: 0 24px ;
+.chat-container {
+    padding: 0 24px;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.chat-container div span{
+.chat-container div span {
     display: block;
     text-align: center;
     font-size: 0.875rem;
 }
-.message{
+.message {
     display: flex;
     flex-direction: column;
 }
-.message p{
+.message p {
     padding: 16px;
     border-radius: 16px;
     max-width: 80%;
@@ -285,26 +289,26 @@ main{
     margin-bottom: 24px;
 }
 
-.sent-message p{
+.sent-message p {
     background-color: var(--white);
     color: var(--black);
     opacity: 0.8;
     align-self: flex-end;
 }
 
-.received-message p{
+.received-message p {
     background-color: var(--black);
     color: var(--white);
     opacity: 0.8;
 }
 
-.input-container{
+.input-container {
     padding: 8px;
     max-width: 768px;
     margin: 0 auto;
 }
 
-#send-input{
+#send-input {
     width: 100%;
     padding: 12px 16px;
     border: 1px solid #535353;
@@ -318,36 +322,36 @@ section.img-profile-container {
     align-items: center;
 }
 
-.img-profile-container img{
+.img-profile-container img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
 
-.img-profile-container p{
+.img-profile-container p {
     margin-bottom: 0;
 }
 
-.edit-profile{
+.edit-profile {
     font-size: 0.875rem;
     font-weight: 600;
 }
 
-#profile-main form{
+#profile-main form {
     margin: 24px auto 162px;
     max-width: 700px;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 16px;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     color: var(--black);
 }
 
-.form-group input{
+.form-group input {
     width: 100%;
     border: 1px solid #535353;
     box-sizing: border-box;
@@ -355,7 +359,7 @@ section.img-profile-container {
     padding: 12px 16px;
 }
 
-#profile-main>form>button{
+#profile-main > form > button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,40 +370,40 @@ section.img-profile-container {
     color: var(--white);
 }
 
-.inicial-main{
+.inicial-main {
     padding: 150px 24px 0;
     max-width: 700px;
     margin: 0 auto;
 }
 
-.inicial-main figure{
+.inicial-main figure {
     margin-bottom: 33px;
     display: flex;
     justify-content: center;
 }
 
-.inicial-main>h1{
+.inicial-main > h1 {
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 25px;
     margin-bottom: 8px;
     text-align: center;
-    color:var(--black);
+    color: var(--black);
 }
 
-.inicial-main>p{
+.inicial-main > p {
     text-align: center;
     line-height: 24px;
     color: var(--grey);
 }
 
-.inicial-main>div{
+.inicial-main > div {
     display: flex;
     justify-content: center;
     margin: 109px 24px 16px;
 }
 
-.inicial-main>div>a{
+.inicial-main > div > a {
     box-sizing: border-box;
     width: 100%;
     text-decoration: none;
@@ -411,7 +415,6 @@ section.img-profile-container {
     max-width: 700px;
 }
 
-
 @media (min-width: 768px) {
     .nav-logo-container {
         display: inline;
@@ -421,17 +424,24 @@ section.img-profile-container {
         padding: 0 10em;
     }
 
-    #index-main, #favorites-main, #messages-main h1, #profile-main h1{ 
+    .main-nav-list > li > a {
+        font-size: 1.2rem;
+    }
+
+    #index-main,
+    #favorites-main,
+    #messages-main h1,
+    #profile-main h1 {
         text-align: center;
     }
-    .categories-container li{
+    .categories-container li {
         justify-content: flex-start;
         padding: 0 30px;
     }
-    .categories-container h2{
+    .categories-container h2 {
         padding-left: 20px;
     }
-    .pets-cards-container{
-        grid-template-columns: repeat(4,1fr);
+    .pets-cards-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
