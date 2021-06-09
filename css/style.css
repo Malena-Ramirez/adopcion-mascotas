@@ -199,7 +199,7 @@ main{
         padding: 0 10em;
     }
 
-    #index-main{
+    #index-main, #favorites-main{
         text-align: center;
     }
     .categories-container li{
