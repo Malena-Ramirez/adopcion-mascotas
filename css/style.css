@@ -300,6 +300,8 @@ main{
 
 .input-container{
     padding: 8px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 #send-input{
