@@ -63,7 +63,7 @@ main{
     padding: 0 24px;
 }
 
-#index-main p{
+.adopting-text{
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 33px;
@@ -140,16 +140,48 @@ main{
     margin-bottom: 96px;
 }
 
+.img-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.img-card-container img{
+    border-radius: 16px;
+    grid-area: 1/1/5/2;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    grid-area: 1/1/5/2;
+}
+
+.cards-text-container{
+    font-size: 0.875rem;
+    color: var(--white);
+    margin: 0 16px 16px 16px
+    /* grid-area: 4/1/5/2; */
+}
+
+.cards-text-container h3{
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.cards-text-container p{
+    margin-bottom: 0;
+}
+
 .img-card-container:nth-child(odd){
     margin-bottom: 24px;
 }
 
 .img-card-container:nth-child(even){
     margin-top: 24px;
-}
-
-.img-card-container img{
-    border-radius: 16px;
 }
 
 
