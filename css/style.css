@@ -205,9 +205,6 @@ main{
 }
 
 .message-container img{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
     margin: 8px;
 }
 
@@ -236,6 +233,14 @@ main{
     width: 6px;
     height: 12px;
     margin: 34px 17px;
+}
+
+.profile-img{
+    border: 3px solid #85D1CE;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
