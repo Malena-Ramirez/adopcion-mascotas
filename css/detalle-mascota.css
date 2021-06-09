@@ -1,32 +1,32 @@
-#pet-detail-main{
+#pet-detail-main {
     margin: 0;
     padding: 0;
 }
 
-.pet-img{
+.pet-img {
     width: 100%;
     height: 442px;
-	object-fit: cover;
+    object-fit: cover;
 }
 
-.pet-detail-text{
+.pet-detail-text {
     background-color: var(--white);
     padding: 16px 24px;
     border-radius: 16px 16px 0px 0px;
 }
 
-.pet-name-container{
+.pet-name-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.pet-name{
+.pet-name {
     display: flex;
 }
 
-.pet-name-container>.pet-name>h1{
+.pet-name-container > .pet-name > h1 {
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 33px;
@@ -35,12 +35,12 @@
     color: var(--black);
 }
 
-.pet-name-container>.pet-name>img{
+.pet-name-container > .pet-name > img {
     width: 32px;
     height: 32px;
 }
 
-.favorite-icon{
+.favorite-icon {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -51,16 +51,16 @@
     background-color: white;
 }
 
-.favorite-icon:hover{
+.favorite-icon:hover {
     cursor: pointer;
 }
 
-.favorite-icon>i{
+.favorite-icon > i {
     color: var(--tertiary-color);
     margin-top: 5px;
 }
 
-.pet-info-container{
+.pet-info-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -69,49 +69,51 @@
     color: var(--grey);
 }
 
-.pet-info-container>div>p{
+.pet-info-container > div > p {
     margin-bottom: 0;
 }
 
-.pet-breed-container, .pet-age-container{
+.pet-breed-container,
+.pet-age-container {
     display: flex;
 }
 
-.pet-breed-container img, .pet-age-container img{
+.pet-breed-container img,
+.pet-age-container img {
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
 
-.pet-location-container{
+.pet-location-container {
     grid-area: 2/1/3/3;
     display: flex;
     margin-bottom: 32px;
 }
 
-.pet-location-container img{
+.pet-location-container img {
     width: 18px;
     height: 22px;
     margin-right: 17px;
 }
 
-#pet-detail-main h2{
+#pet-detail-main h2 {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 25px;
     margin-bottom: 0;
 }
 
-.img-personality-container{
+.img-personality-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 8px;
     justify-items: center;
     margin-bottom: 32px;
 }
 
-.img-personality-container>figure{
+.img-personality-container > figure {
     padding: 10px;
     border: 2px solid var(--secondary-color);
     box-sizing: border-box;
@@ -123,11 +125,39 @@
     width: 100%;
 }
 
-.img-personality-container>figure>img{
+.img-personality-container > figure > img {
     width: 40px;
     height: 40px;
 }
 
-.pet-history-container>p{
+.pet-history-container > p {
     margin: 8px 0 32px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-contact-container > div {
+    margin-left: 7px;
+}
+
+.profile-contact-container > div > p:first-child {
+    font-size: 0.688rem;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+
+.name-profile-contact {
+    font-size: 0.875rem;
+    line-height: 19px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
