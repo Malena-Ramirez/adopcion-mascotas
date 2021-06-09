@@ -147,6 +147,10 @@ main {
     margin: 0 auto 96px;
 }
 
+.pets-cards-container a{
+    text-decoration: none;
+}
+
 .img-card-container {
     display: grid;
     grid-template-columns: 1fr;
