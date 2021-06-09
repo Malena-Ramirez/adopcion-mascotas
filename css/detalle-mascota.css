@@ -1,6 +1,15 @@
 #pet-detail-main {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(76, 1fr);
+}
+
+.pet-img-container {
+    grid-area: 1/1/31/2;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .pet-img {
@@ -13,6 +22,9 @@
     background-color: var(--white);
     padding: 16px 24px;
     border-radius: 16px 16px 0px 0px;
+    grid-area: 30/1/77/2;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .pet-name-container {
@@ -49,14 +61,19 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    color: var(--tertiary-color);
 }
 
 .favorite-icon:hover {
     cursor: pointer;
 }
 
+.fav-active {
+    color: var(--secondary-color);
+}
+
 .favorite-icon > i {
-    color: var(--tertiary-color);
+    color: inherit;
     margin-top: 5px;
 }
 
@@ -137,6 +154,7 @@
 .contact-container {
     display: flex;
     align-items: center;
+    align-items: center;
 }
 
 .profile-contact-container {
@@ -162,13 +180,13 @@
     margin-bottom: 0;
 }
 
-.conctac-btn{
+.conctac-btn {
     display: flex;
     justify-content: center;
     margin-left: 26px;
 }
 
-.conctac-btn a{
+.conctac-btn a {
     box-sizing: border-box;
     width: 155px;
     text-decoration: none;
