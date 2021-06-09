@@ -191,11 +191,12 @@ main{
 
 .message-container{
     display: flex;
+    justify-content: space-between;
     background-color: var(--white);
     margin-bottom: 24px;
     border-radius: 8px;
     align-items: center;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -213,7 +214,7 @@ main{
     justify-content: space-between;
 }
 
-.message-info-text h2{
+.message-info-text h2, .img-chat-container h1{
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0;
@@ -241,6 +242,23 @@ main{
     width: 64px;
     height: 64px;
     border-radius: 50%;
+}
+
+.profile-img-container{
+    background-color: var(--white);
+    margin-bottom: 24px;
+}
+
+.back-btn{
+    margin: 24px;
+    position: absolute;
+}
+
+.img-chat-container{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
