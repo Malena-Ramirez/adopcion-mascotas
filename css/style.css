@@ -188,11 +188,11 @@ main {
     margin-bottom: 0;
 }
 
-.img-card-container:nth-child(odd) {
+.pets-cards-container>a:nth-child(odd) {
     margin-bottom: 24px;
 }
 
-.img-card-container:nth-child(even) {
+.pets-cards-container>a:nth-child(even) {
     margin-top: 24px;
 }
 
