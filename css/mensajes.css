@@ -1,0 +1,47 @@
+.message-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.main-messages-container a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.message-container img {
+    margin: 8px;
+}
+
+.message-info-text div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-info-text h2,
+.img-chat-container h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.message-info-text span {
+    font-size: 0.688rem;
+}
+
+.message-info-text p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    line-height: 19px;
+}
+
+#vector {
+    width: 6px;
+    height: 12px;
+    margin: 34px 17px;
+}

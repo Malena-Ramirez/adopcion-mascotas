@@ -1,0 +1,65 @@
+#index-main h1 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 24px;
+}
+
+.categories-container h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.categories-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 8px;
+    background-color: var(--black);
+    cursor: pointer;
+}
+
+.categories-container li:hover {
+    transform: translateY(-3px);
+    transition: all 0.7s;
+}
+
+#dogs-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 8px 0;
+}
+
+#cats-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 8px 0;
+}
+
+.categories-container li img {
+    width: 40px;
+}
+
+.inactive-categorie {
+    opacity: 0.5;
+}
