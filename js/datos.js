@@ -46,4 +46,4 @@ const pets = [
     new Pet("Lili", "./img/lili.jpg", "female", "cat", "Persa", "1 año", [personality.c, personality.t, personality.j], stories.lili, "Luisa Salas"),
     new Pet("Kity", "./img/kity.jpg", "female", "cat", "Persa", "9 meses", [personality.c, personality.i, personality.j], stories.kity, "Andrea Díaz"),
     new Pet("Sasha", "./img/sasha.jpg", "female", "cat", "Siames", "2 meses", [personality.c, personality.t, personality.j], stories.sasha, "Juana Rodriguez")
-]
+];
