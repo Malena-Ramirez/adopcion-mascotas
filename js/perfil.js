@@ -4,6 +4,9 @@ const editName = document.querySelector(".name-profile");
 printHTML = () => {
     const person = JSON.parse(localStorage.getItem("Person"));
     editName.innerHTML = `${person.name} ${person.lastName}`;
+    document.querySelector("#name").value = `${person.name}`;
+    document.querySelector("#last-name").value = `${person.lastName}`;
+    document.querySelector("#email").value = `${person.email}`;
 }
 form.addEventListener("submit", e => {
     e.preventDefault(); 
@@ -17,7 +20,6 @@ form.addEventListener("submit", e => {
     };
     localStorage.setItem("Person", JSON.stringify(person));
     printHTML();
-    // form.reset();
 })
 
 document.addEventListener("DOMContentLoaded", printHTML);
