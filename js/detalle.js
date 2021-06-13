@@ -4,10 +4,10 @@ const params = new URLSearchParams(window.location.search);
 const petId = parseInt(params.get("id"));
 
 for (let pet of pets) {
-    if (petId === pet.id) {
-        console.log(pet);
-        const mainSection = document.querySelector("#pet-detail-main");
-        mainSection.innerHTML = `<section class="pet-img-container">
+  if (petId === pet.id) {
+    console.log(pet);
+    const mainSection = document.querySelector("#pet-detail-main");
+    mainSection.innerHTML = `<section class="pet-img-container">
         <a href="index.html">
           <img src="img/back.png" alt="Icono para volver atrás" class="back-btn" />
         </a>
@@ -32,7 +32,7 @@ for (let pet of pets) {
           </div>
           <div class="pet-location-container">
             <img src="img/map-pin.svg" alt="Dirección" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>${pet.address}</p>
           </div>
         </div>
         <div class="pet-personality-container">
@@ -69,7 +69,7 @@ for (let pet of pets) {
           </div>
         </div>
       </section>
-        ` 
-        break;
-    }
+        `
+    break;
+  }
 }
