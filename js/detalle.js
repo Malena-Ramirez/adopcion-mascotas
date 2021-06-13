@@ -81,4 +81,6 @@ const favBtn = document.querySelector(".favorite-icon");
 favBtn.addEventListener("click", e => {
   favBtn.classList.toggle("fav-active");
   document.querySelector(".favorite-icon>i").classList.toggle("beat");
-})
+  const { id: petId } = e.target.closest("div").dataset;
+  console.log(petId);
+});
