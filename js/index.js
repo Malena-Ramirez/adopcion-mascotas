@@ -1,16 +1,20 @@
 import { pets } from "./datos.js";
 
-const dogsCategoryBtn = document.querySelector(".dogs-container");
-const catsCategoryBtn = document.querySelector(".cats-container");
+const categories = document.querySelectorAll(".pet-category");
 
+categories.forEach(element => {
+    element.addEventListener
+
+    
+});
 dogsCategoryBtn.addEventListener("click", () => {
-    dogsCategoryBtn.classList.remove("inactive-categorie");
-    catsCategoryBtn.classList.add("inactive-categorie");
+    dogsCategoryBtn.classList.remove("inactive-category");
+    catsCategoryBtn.classList.add("inactive-category");
 })
 
 catsCategoryBtn.addEventListener("click", () => {
-    catsCategoryBtn.classList.remove("inactive-categorie");
-    dogsCategoryBtn.classList.add("inactive-categorie");
+    catsCategoryBtn.classList.remove("inactive-category");
+    dogsCategoryBtn.classList.add("inactive-category");
 })
 
 const cardsContainer = document.querySelector(".pets-cards-container");
@@ -21,17 +25,15 @@ dogsCategoryBtn.addEventListener("click", () => {
         const { category, id, name, img, breed } = element;
         if (category === "dog") {
             const cardAnchor = document.createElement("a");
-            cardAnchor.href = "detalle-mascota.html";
-            cardAnchor.innerHTML = `<a href="detalle-mascota.html?id=${id}">
-            <div class="img-card-container">
+            cardAnchor.href = `detalle-mascota.html?id=${id}`;
+            cardAnchor.innerHTML = `<div class="img-card-container">
                 <img src=${img} alt="Imagen de la mascota" class="img-fluid" />
                 <div class="gradient"></div>
                 <div class="cards-text-container">
                     <h3 class="Pet-name">${name}</h3>
                     <p class="pet-breed">${breed}</p>
                 </div>
-            </div>
-        </a>`;
+            </div>`;
             cardsContainer.appendChild(cardAnchor);
         }
     });
