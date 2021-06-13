@@ -3,9 +3,28 @@ import { pets } from "./datos.js";
 const params = new URLSearchParams(window.location.search);
 const petId = parseInt(params.get("id"));
 
+const getPersonalities = personalities => {
+  let figures = "";
+  personalities.forEach(element => {
+    figures += `
+    <figure>
+      <img src="img/${element}.svg" alt="Personalidad" />
+      <figcaption>${element}</figcaption>
+    </figure>
+    `;
+  });
+  return `
+        <div class="pet-personality-container">
+          <h2>Personalidad</h2>
+          <div class="img-personality-container">
+            ${figures}
+          </div>
+        </div>
+  `;
+}
+
 for (let pet of pets) {
   if (petId === pet.id) {
-    console.log(pet);
     const mainSection = document.querySelector("#pet-detail-main");
     mainSection.innerHTML = `<section class="pet-img-container">
         <a href="index.html">
@@ -35,23 +54,7 @@ for (let pet of pets) {
             <p>${pet.address}</p>
           </div>
         </div>
-        <div class="pet-personality-container">
-          <h2>Personalidad</h2>
-          <div class="img-personality-container">
-            <figure>
-              <img src="img/cariñoso.svg" alt="Personalidad" />
-              <figcaption>Cariñoso</figcaption>
-            </figure>
-            <figure>
-              <img src="img/inquieto.svg" alt="Personalidad" />
-              <figcaption>Inquieto</figcaption>
-            </figure>
-            <figure>
-              <img src="img/tierno.svg" alt="Personalidad" />
-              <figcaption>Tierno</figcaption>
-            </figure>
-          </div>
-        </div>
+        ${getPersonalities(pet.personality)}
         <div class="pet-story-container">
           <h2>Historia de ${pet.name}</h2>
           <p>${pet.story}</p>
