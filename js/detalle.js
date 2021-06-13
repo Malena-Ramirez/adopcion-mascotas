@@ -38,7 +38,7 @@ for (let pet of pets) {
             <h1>${pet.name}</h1>
             <img src="img/${pet.sex}.svg" alt="Sexo de la mascota" />
           </div>
-          <div class="favorite-icon"><i class="bi bi-heart-fill"></i></div>
+          <div class="favorite-icon" data-id="${pet.id}"><i class="bi bi-heart-fill"></i></div>
         </div>
         <div class="pet-info-container">
           <div class="pet-breed-container">
@@ -72,7 +72,13 @@ for (let pet of pets) {
           </div>
         </div>
       </section>
-        `
+        `;
     break;
   }
 }
+
+const favBtn = document.querySelector(".favorite-icon");
+favBtn.addEventListener("click", e => {
+  favBtn.classList.toggle("fav-active");
+  document.querySelector(".favorite-icon>i").classList.toggle("beat");
+})
