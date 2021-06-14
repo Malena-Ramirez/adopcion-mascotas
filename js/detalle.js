@@ -2,7 +2,7 @@ import { pets } from "./datos.js";
 
 const params = new URLSearchParams(window.location.search);
 const selectedPetId = parseInt(params.get("id"));
-let petsFavArray = JSON.parse(localStorage.getItem("favorites"));
+let petsFavArray = JSON.parse(localStorage.getItem("favorites")) || [];
 
 const getPersonalities = personalities => {
   let figures = "";
@@ -28,7 +28,7 @@ for (let pet of pets) {
   if (selectedPetId === pet.id) {
     const mainSection = document.querySelector("#pet-detail-main");
     mainSection.innerHTML = `<section class="pet-img-container">
-        <a href="javascript: history.go(-1)">
+        <a href="javascript: history.go(-1);">
           <img src="img/back.png" alt="Icono para volver atrás" class="back-btn" />
         </a>
         <img src="${pet.img}" alt="Imagen de la mascota" class="img-fluid pet-img" />
@@ -75,7 +75,7 @@ for (let pet of pets) {
       </section>
         `;
     if (petsFavArray.some(element => element.id === pet.id)) {
-      document.querySelector(".favorite-icon").classList.add("fav-active")
+      document.querySelector(".favorite-icon").classList.add("fav-active");
     }
     break;
   }
@@ -84,13 +84,13 @@ for (let pet of pets) {
 const favBtn = document.querySelector(".favorite-icon");
 favBtn.addEventListener("click", e => {
   favBtn.classList.toggle("fav-active");
-  document.querySelector(".favorite-icon>i").classList.toggle("beat");
+  document.querySelector(".favorite-icon > i").classList.toggle("beat");
   let { id: petId } = e.target.closest("div").dataset;
   petId = parseInt(petId);
   const selectedPet = pets.find(pet => pet.id === petId);
-  if (petsFavArray.some(element => element.id === petId)) {
-    const i = petsFavArray.indexOf(element => element.id === petId);
-    petsFavArray.splice(i, 1);
+  const favPetIndex = petsFavArray.findIndex(element => element.id === petId);
+  if (favPetIndex > -1) {
+    petsFavArray.splice(favPetIndex, 1);
   } else {
     petsFavArray.push(selectedPet);
   }
