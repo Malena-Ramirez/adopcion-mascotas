@@ -78,9 +78,19 @@ for (let pet of pets) {
 }
 
 const favBtn = document.querySelector(".favorite-icon");
+let petsFavArray = [];
 favBtn.addEventListener("click", e => {
   favBtn.classList.toggle("fav-active");
   document.querySelector(".favorite-icon>i").classList.toggle("beat");
-  const { id: petId } = e.target.closest("div").dataset;
-  console.log(petId);
+  let { id: petId } = e.target.closest("div").dataset;
+  petId = parseInt(petId);
+  const petSelected = pets.find(pet => pet.id === petId);
+  petsFavArray = JSON.parse(localStorage.getItem("favorites"));
+  if (petsFavArray.some(element => element.id === petId)) {
+    const i = petsFavArray.indexOf(element => element.id === petId);
+    petsFavArray.splice(i, 1);
+  } else {
+    petsFavArray.push(petSelected);
+  }
+  localStorage.setItem("favorites", JSON.stringify(petsFavArray));
 });
