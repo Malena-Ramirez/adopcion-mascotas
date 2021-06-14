@@ -1,4 +1,4 @@
-const petsFavArray = JSON.parse(localStorage.getItem("favorites"));
+const petsFavArray = JSON.parse(localStorage.getItem("favorites")) || [];
 const petsContainer = document.querySelector("#pets-favs-container");
 if (!petsFavArray.length) {
   petsContainer.innerHTML = `
@@ -23,5 +23,4 @@ if (!petsFavArray.length) {
 </div>`;
     document.querySelector(".pets-cards-container").appendChild(cardAnchor);
   });
-
 }
