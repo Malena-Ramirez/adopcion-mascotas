@@ -27,7 +27,7 @@ for (let pet of pets) {
   if (petId === pet.id) {
     const mainSection = document.querySelector("#pet-detail-main");
     mainSection.innerHTML = `<section class="pet-img-container">
-        <a href="index.html">
+        <a href="javascript: history.go(-1)">
           <img src="img/back.png" alt="Icono para volver atrás" class="back-btn" />
         </a>
         <img src="${pet.img}" alt="Imagen de la mascota" class="img-fluid pet-img" />
@@ -61,7 +61,7 @@ for (let pet of pets) {
         </div>
         <div class="contact-container">
           <div class="profile-contact-container">
-            <img src="img/perfil1.jpg" alt="Imagen de perfil" class="profile-img img-fluid" />
+            <img src="img/perfil2.png" alt="Imagen de perfil" class="profile-img img-fluid" />
             <div>
               <p>Publicado por</p>
               <p class="name-profile-contact">Juan Perez</p>
