@@ -1,7 +1,8 @@
 import { pets } from "./datos.js";
 
 const params = new URLSearchParams(window.location.search);
-const petId = parseInt(params.get("id"));
+const selectedPetId = parseInt(params.get("id"));
+let petsFavArray = JSON.parse(localStorage.getItem("favorites"));
 
 const getPersonalities = personalities => {
   let figures = "";
@@ -24,7 +25,7 @@ const getPersonalities = personalities => {
 }
 
 for (let pet of pets) {
-  if (petId === pet.id) {
+  if (selectedPetId === pet.id) {
     const mainSection = document.querySelector("#pet-detail-main");
     mainSection.innerHTML = `<section class="pet-img-container">
         <a href="javascript: history.go(-1)">
@@ -73,19 +74,20 @@ for (let pet of pets) {
         </div>
       </section>
         `;
+    if (petsFavArray.some(element => element.id === pet.id)) {
+      document.querySelector(".favorite-icon").classList.add("fav-active")
+    }
     break;
   }
 }
 
 const favBtn = document.querySelector(".favorite-icon");
-let petsFavArray = [];
 favBtn.addEventListener("click", e => {
   favBtn.classList.toggle("fav-active");
   document.querySelector(".favorite-icon>i").classList.toggle("beat");
   let { id: petId } = e.target.closest("div").dataset;
   petId = parseInt(petId);
   const selectedPet = pets.find(pet => pet.id === petId);
-  petsFavArray = JSON.parse(localStorage.getItem("favorites"));
   if (petsFavArray.some(element => element.id === petId)) {
     const i = petsFavArray.indexOf(element => element.id === petId);
     petsFavArray.splice(i, 1);
@@ -94,3 +96,4 @@ favBtn.addEventListener("click", e => {
   }
   localStorage.setItem("favorites", JSON.stringify(petsFavArray));
 });
+
