@@ -1,3 +1,5 @@
+import { printCards } from "./utils.js";
+
 const petsFavArray = JSON.parse(localStorage.getItem("favorites")) || [];
 const petsContainer = document.querySelector("#pets-favs-container");
 if (!petsFavArray.length) {
@@ -9,18 +11,7 @@ if (!petsFavArray.length) {
   <div class="pets-cards-container">
   `;
   petsFavArray.forEach(element => {
-    const { id, name, img, breed } = element;
-    const cardAnchor = document.createElement("a");
-    cardAnchor.href = `detalle-mascota.html?id=${id}`;
-    cardAnchor.innerHTML = `
-<div class="img-card-container">
-  <img src=${img} alt="Imagen de la mascota" class="img-fluid" />
-  <div class="gradient"></div>
-  <div class="cards-text-container">
-    <h3 class="Pet-name">${name}</h3>
-    <p class="pet-breed">${breed}</p>
-  </div>
-</div>`;
+    const cardAnchor = printCards(element);
     document.querySelector(".pets-cards-container").appendChild(cardAnchor);
   });
 }

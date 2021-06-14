@@ -1,4 +1,5 @@
 import { pets } from "./datos.js";
+import { printCards } from "./utils.js";
 
 const categories = document.querySelectorAll(".pet-category");
 
@@ -10,18 +11,9 @@ categories.forEach(element => {
         const cardsContainer = document.querySelector(".pets-cards-container");
         cardsContainer.innerHTML = "";
         pets.forEach(element => {
-            const { category, id, name, img, breed } = element;
+            const { category } = element;
             if (selectedCategory === category) {
-                const cardAnchor = document.createElement("a");
-                cardAnchor.href = `detalle-mascota.html?id=${id}`;
-                cardAnchor.innerHTML = `<div class="img-card-container">
-                <img src=${img} alt="Imagen de la mascota" class="img-fluid" />
-                <div class="gradient"></div>
-                <div class="cards-text-container">
-                    <h3 class="Pet-name">${name}</h3>
-                    <p class="pet-breed">${breed}</p>
-                </div>
-            </div>`;
+                const cardAnchor = printCards(element);
                 cardsContainer.appendChild(cardAnchor);
             }
         });
