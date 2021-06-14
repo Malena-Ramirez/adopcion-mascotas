@@ -62,10 +62,10 @@ for (let pet of pets) {
         </div>
         <div class="contact-container">
           <div class="profile-contact-container">
-            <img src="img/perfil2.png" alt="Imagen de perfil" class="profile-img img-fluid" />
+            <img src=${pet.publishedBy.img} alt="Imagen de perfil" class="profile-img img-fluid" />
             <div>
               <p>Publicado por</p>
-              <p class="name-profile-contact">Juan Perez</p>
+              <p class="name-profile-contact">${pet.publishedBy.name}</p>
             </div>
           </div>
           <div class="conctac-btn">

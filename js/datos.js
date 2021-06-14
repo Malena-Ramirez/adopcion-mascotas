@@ -14,6 +14,15 @@ class Pet {
     }
 }
 
+class Person {
+    constructor({id, name, img, messages}) {
+        this.id = id;
+        this.name = name;
+        this.img = img;
+        this.messages = messages;
+    }
+}
+
 const personality = {
     c: "Cariñoso",
     t: "Tierno",
@@ -35,6 +44,27 @@ const stories = {
     sasha: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero."
 }
 
+const people = [
+    new Person({
+        id: 1,
+        name: "Luis Perez",
+        img: "./img/perfil1.jpg",
+        // messages:
+    }),
+    new Person({
+        id: 2,
+        name: "Pepita Gonzalez",
+        img: "./img/perfil2.jpg",
+        // messages:
+    }),
+    new Person({
+        id: 3,
+        name: "Andrea Díaz",
+        img: "./img/perfil3.jpg",
+        // messages:
+    })
+];
+
 const pets = [
     new Pet({
         id: 1,
@@ -47,7 +77,7 @@ const pets = [
         address: "4140 Parker Rd. Allentown, New Mexico 31134",
         personality: [personality.c, personality.t, personality.i],
         story: stories.toby,
-        publishedBy: "Pepita Gonzalez"
+        publishedBy: people[0]
     }),
     new Pet({
         id: 2,
@@ -60,7 +90,7 @@ const pets = [
         address: "5107 Parker Rd. Allentown, Barcelona",
         personality: [personality.t, personality.i, personality.j],
         story: stories.princesa,
-        publishedBy: "Juan Perez"
+        publishedBy: people[1]
     }),
     new Pet({
         id: 3,
@@ -73,7 +103,7 @@ const pets = [
         address: "3434 Parker Rd. Allentown, Ciudad de México",
         personality: [personality.c, personality.t, personality.j],
         story: stories.milo,
-        publishedBy: "Luisa Salas"
+        publishedBy: people[2]
     }),
     new Pet({
         id: 4,
@@ -86,7 +116,7 @@ const pets = [
         address: "6150 Parker Rd. Allentown, Madrid 31134",
         personality: [personality.c, personality.t, personality.i],
         story: stories.luna,
-        publishedBy: "Andrea Díaz"
+        publishedBy: people[0]
     }),
     new Pet({
         id: 5,
@@ -99,7 +129,7 @@ const pets = [
         address: "1214 Parker Rd. Allentown, Bogotá 31134",
         personality: [personality.c, personality.t, personality.i],
         story: stories.coco,
-        publishedBy: "Andres Rodriguez"
+        publishedBy: people[1]
     }),
     new Pet({
         id: 6,
@@ -112,7 +142,7 @@ const pets = [
         address: "3146 Parker Rd. Allentown, New Mexico 31134",
         personality: [personality.c, personality.i, personality.j],
         story: stories.teo,
-        publishedBy: "Juana Rodriguez"
+        publishedBy: people[2]
     }),
     new Pet({
         id: 7,
@@ -125,7 +155,7 @@ const pets = [
         address: "4140 Parker Rd. Allentown, Nueva York 31134",
         personality: [personality.t, personality.i, personality.j],
         story: stories.felix,
-        publishedBy: "Pepita Gonzalez"
+        publishedBy: people[0]
     }),
     new Pet({
         id: 8,
@@ -138,7 +168,7 @@ const pets = [
         address: "4140 Parker Rd. Allentown, Buenos Aires 31134",
         personality: [personality.c, personality.t, personality.j],
         story: stories.michi,
-        publishedBy: "Juan Perez"
+        publishedBy: people[1]
     }),
     new Pet({
         id: 9,
@@ -151,7 +181,7 @@ const pets = [
         address: "2150 Parker Rd. Allentown, Cartagena 31134",
         personality: [personality.c, personality.t, personality.j],
         story: stories.lili,
-        publishedBy: "Luisa Salas"
+        publishedBy: people[2]
     }),
     new Pet({
         id: 10,
@@ -164,7 +194,7 @@ const pets = [
         address: "1464 Parker Rd. Allentown, Santiago de Chile 31134",
         personality: [personality.c, personality.i, personality.j],
         story: stories.kity,
-        publishedBy: "Andrea Díaz"
+        publishedBy: people[0]
     }),
     new Pet({
         id: 11,
@@ -177,7 +207,7 @@ const pets = [
         address: "4545 Parker Rd. Allentown, Quito 31134",
         personality: [personality.c, personality.t, personality.j],
         story: stories.sasha,
-        publishedBy: "Juana Rodriguez"
+        publishedBy: people[1]
     })
 ];
 
