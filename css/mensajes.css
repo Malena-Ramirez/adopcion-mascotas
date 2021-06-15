@@ -18,6 +18,10 @@
   margin: 8px;
 }
 
+.message-info-text {
+  width: 100%;
+}
+
 .message-info-text div {
   display: flex;
   justify-content: space-between;
