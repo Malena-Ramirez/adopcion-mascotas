@@ -1,8 +1,8 @@
 export const printCards = element => {
   const { id, name, img, breed } = element;
-    const cardAnchor = document.createElement("a");
-    cardAnchor.href = `detalle-mascota.html?id=${id}`;
-    cardAnchor.innerHTML = `
+  const cardAnchor = document.createElement("a");
+  cardAnchor.href = `detalle-mascota.html?id=${id}`;
+  cardAnchor.innerHTML = `
     <div class="img-card-container">
       <img src=${img} alt="Imagen de la mascota" class="img-fluid" />
       <div class="gradient"></div>
@@ -11,6 +11,6 @@ export const printCards = element => {
         <p class="pet-breed">${breed}</p>
       </div>
     </div>`;
-    return cardAnchor;
+  return cardAnchor;
 }
 

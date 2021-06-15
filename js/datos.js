@@ -15,7 +15,7 @@ class Pet {
 }
 
 class Person {
-    constructor({id, name, img, messages}) {
+    constructor({ id, name, img, messages }) {
         this.id = id;
         this.name = name;
         this.img = img;
@@ -49,7 +49,7 @@ export const people = [
         id: 1,
         name: "Luis Perez",
         img: "./img/perfil1.jpg",
-        messages:[{
+        messages: [{
             time: "8:00 PM",
             message: "Hola! Me gustaría recibir más información sobre el gato.",
             type: "sent"
@@ -69,7 +69,7 @@ export const people = [
         id: 2,
         name: "Laura Salas",
         img: "./img/perfil2.jpg",
-        messages:[{
+        messages: [{
             time: "2:00 PM",
             message: "Buenas tardes",
             type: "sent"
@@ -80,13 +80,13 @@ export const people = [
             type: "sent"
 
         }]
-       
+
     }),
     new Person({
         id: 3,
         name: "Andrea Díaz",
         img: "./img/perfil3.jpg",
-        messages:[{
+        messages: [{
             time: "10:02 AM",
             message: "Buen día. ¿Cómo estás? ",
             type: "sent"

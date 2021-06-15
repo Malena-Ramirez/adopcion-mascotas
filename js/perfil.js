@@ -9,7 +9,7 @@ printHTML = () => {
     document.querySelector("#email").value = `${person.email}`;
 }
 form.addEventListener("submit", e => {
-    e.preventDefault(); 
+    e.preventDefault();
     const name = document.querySelector("#name").value;
     const lastName = document.querySelector("#last-name").value;
     const email = document.querySelector("#email").value;
@@ -21,5 +21,4 @@ form.addEventListener("submit", e => {
     localStorage.setItem("Person", JSON.stringify(person));
     printHTML();
 })
-
 document.addEventListener("DOMContentLoaded", printHTML);
