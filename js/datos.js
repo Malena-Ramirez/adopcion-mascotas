@@ -44,28 +44,50 @@ const stories = {
     sasha: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero."
 }
 
-const people = [
+export const people = [
     new Person({
         id: 1,
         name: "Luis Perez",
         img: "./img/perfil1.jpg",
-        // messages:
+        messages:[{
+            time: "8:00 PM",
+            message: "Hola! Me gustaría recibir más información sobre el gato."
+        },
+        {
+            time: "8:14 PM",
+            message: "Hola! Claro que sí. Es un gato muy cariñoso y en buen estado de salud. Ama jugar con otros animales."
+        },
+        {
+            time: "8:20 PM",
+            message: "Es justo lo que estoy buscando! Me gustaría conocerlo."
+        }]
     }),
     new Person({
         id: 2,
-        name: "Pepita Gonzalez",
+        name: "Laura Salas",
         img: "./img/perfil2.jpg",
-        // messages:
+        messages:[{
+            time: "2:00 PM",
+            message: "Buenas tardes. Me gustaría adoptar al perrito."
+        }]
+       
     }),
     new Person({
         id: 3,
         name: "Andrea Díaz",
         img: "./img/perfil3.jpg",
-        // messages:
+        messages:[{
+            time: "10:02 AM",
+            message: "Buen día. ¿Cómo estás? "
+        },
+        {
+            time: "8:20 PM",
+            message: "Buen día. Muy bien, gracias."
+        }]
     })
 ];
 
-const pets = [
+export const pets = [
     new Pet({
         id: 1,
         name: "Toby",
@@ -210,5 +232,3 @@ const pets = [
         publishedBy: people[1]
     })
 ];
-
-export { pets };
