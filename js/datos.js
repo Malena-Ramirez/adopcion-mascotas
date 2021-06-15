@@ -51,15 +51,18 @@ export const people = [
         img: "./img/perfil1.jpg",
         messages:[{
             time: "8:00 PM",
-            message: "Hola! Me gustaría recibir más información sobre el gato."
+            message: "Hola! Me gustaría recibir más información sobre el gato.",
+            type: "sent"
         },
         {
             time: "8:14 PM",
-            message: "Hola! Claro que sí. Es un gato muy cariñoso y en buen estado de salud. Ama jugar con otros animales."
+            message: "Hola! Claro que sí. Es un gato muy cariñoso y en buen estado de salud. Ama jugar con otros animales.",
+            type: "received"
         },
         {
             time: "8:20 PM",
-            message: "Es justo lo que estoy buscando! Me gustaría conocerlo."
+            message: "Es justo lo que estoy buscando! Me gustaría conocerlo.",
+            type: "sent"
         }]
     }),
     new Person({
@@ -68,7 +71,14 @@ export const people = [
         img: "./img/perfil2.jpg",
         messages:[{
             time: "2:00 PM",
-            message: "Buenas tardes. Me gustaría adoptar al perrito."
+            message: "Buenas tardes",
+            type: "sent"
+        },
+        {
+            time: "2:01 PM",
+            message: "Me gustaría adoptar al perrito. Me gustó mucho su historia.",
+            type: "sent"
+
         }]
        
     }),
@@ -78,11 +88,13 @@ export const people = [
         img: "./img/perfil3.jpg",
         messages:[{
             time: "10:02 AM",
-            message: "Buen día. ¿Cómo estás? "
+            message: "Buen día. ¿Cómo estás? ",
+            type: "sent"
         },
         {
             time: "8:20 PM",
-            message: "Buen día. Muy bien, gracias."
+            message: "Buen día. Muy bien, gracias.",
+            type: "received"
         }]
     })
 ];
