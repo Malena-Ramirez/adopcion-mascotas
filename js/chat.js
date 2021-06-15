@@ -1,11 +1,10 @@
 import { people } from "./datos.js";
 
 const params = new URLSearchParams(window.location.search);
-const selectedChatId = parseInt(params.get("id"));
-console.log(selectedChatId);
+const selectedPersonId = parseInt(params.get("id"));
 
 for (let person of people) {
-  if (selectedChatId === person.id) {
+  if (selectedPersonId === person.id) {
     const imgChatContainer = document.querySelector(".img-chat-container");
     imgChatContainer.innerHTML = `
       <img src=${person.img} alt="Imagen de perfil" class="profile-img" />
@@ -15,16 +14,13 @@ for (let person of people) {
     person.messages.forEach(element => {
       const messageContainer = document.createElement("div");
       messageContainer.className = "message";
-      if (element.type === "sent") {
-        messageContainer.classList.add("sent-message");
-      } else {
-        messageContainer.classList.add("received-message");
-      }
+      messageContainer.classList.add(element.type === "sent" ? "sent-message" : "received-message");
       messageContainer.innerHTML = `
         <span>${element.time}</span>
         <p>${element.message}</p>
       `;
       chatContainer.appendChild(messageContainer);
     });
+    break;
   }
 }

@@ -78,9 +78,7 @@ export const people = [
             time: "2:01 PM",
             message: "Me gustaría adoptar al perrito. Me gustó mucho su historia.",
             type: "sent"
-
         }]
-
     }),
     new Person({
         id: 3,

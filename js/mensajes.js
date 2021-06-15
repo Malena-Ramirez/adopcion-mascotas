@@ -3,12 +3,12 @@ import { people } from "./datos.js";
 const messagesContainer = document.querySelector(".main-messages-container");
 
 const getLastMessage = messages => {
-  const indexLastMessage = messages.length - 1;
+  const lastMessage = messages[messages.length - 1];
   return `
-      <span>${messages[indexLastMessage].time}</span>
+      <span>${lastMessage.time}</span>
     </div>
-    <p>${messages[indexLastMessage].message}</p>
-  `
+    <p>${lastMessage.message}</p>
+  `;
 }
 
 people.forEach(element => {
@@ -22,7 +22,7 @@ people.forEach(element => {
           <h2>${element.name}</h2>
           ${getLastMessage(element.messages)}
       </div>
-      <img src="img/Vector.svg" alt="" id="vector">
+      <img src="img/Vector.svg" alt="Regresar" id="vector">
     </div>`;
   messagesContainer.appendChild(cardAnchor);
 });
