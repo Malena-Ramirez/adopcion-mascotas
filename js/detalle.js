@@ -69,7 +69,7 @@ for (let pet of pets) {
             </div>
           </div>
           <div class="conctac-btn">
-            <a href="chat.html">Contactar</a>
+            <a href="chat.html?id=${pet.publishedBy.id}">Contactar</a>
           </div>
         </div>
       </section>
