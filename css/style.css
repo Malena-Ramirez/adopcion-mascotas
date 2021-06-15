@@ -22,10 +22,6 @@ body {
   width: 4em;
 }
 
-.nav-logo-container {
-  display: none;
-}
-
 .main-nav-container {
   justify-content: center !important;
   padding: 0;
