@@ -31,17 +31,17 @@ const personality = {
 }
 
 const stories = {
-    toby: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    princesa: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    milo: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    luna: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    coco: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    teo: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    felix: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    michi: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    lili: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    kity: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero.",
-    sasha: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus commodi aut ex, doloremque laboriosam, quidem voluptate numquam deleniti optio ut accusantium odio consequuntur, ipsam ipsa iure. Quisquam vitae fugiat libero."
+    toby: " Toby es un perro muy activo y excelente cuidador de niños. Fue entrenado como perro guía desde los 4 meses. Ahora busca un hogar donde pueda brindarle todo su cariño a niños con alguna condición o limitación motora.",
+    princesa: "Princesa es la más cariñosa de sus 4 hermanos. Desde que nació se mostró como líder de la manada. Es muy inteligente, por lo que ha aprendido diferentes trucos de manera rápida. Es muy juguetona y amigable con otros animales y seres humanos.",
+    milo: "Milo es un buen rastreador, se divierte olfateando todo a su alrededor, por lo que tiende a parecer despistado. Pero esto no es así, porque está pendiente a todo lo que sucede alrededor, por lo tanto puede ser un buen guardian para sus amigos humanos.",
+    luna: "Luna es una cachorra muy consentida. Le gusta llamar la atención de los humanos haciendo diversas travesuras. Siempre está dispuesta a jugar con humanos pero le cuesta un poco adaptarse a ambientes donde hay otros animales.",
+    coco: "Coco es un cachorro muy inteligente que aprende muy rápido. Sigue fácilmente las instrucciones, siempre esperando una buena recompensa a cambio. Le gusta mucho los días soleados y jugar al aire libre. No disfruta mucho de los baños.",
+    teo: "Teo es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+    felix: "Félix es un gato que está siempre relajado. Puede dormir muchas horas al día, pero siempre quiere tener su comida cuando se levanta. Es un gato muy independiente y silencioso.",
+    michi: "Michi es un gato con una personalidad muy divertida. Le gusta mucho jugar al aire libre y perseguir a otros gatos o perros. Siempre tiene algún juguete junto a él. Para él, todo es motivo de diversión",
+    lili: "Lili es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
+    kity: "Kitty disfruta mucho ver la lluvia caer a través de la ventana mientras está acostada en su cálida cama. Ama ver televisión con los humanos. También le gusta bañarse con agua templada porque odia la suciedad.",
+    sasha: "Sasha es una gata muy cariñosa y juguetona. Es bastante amigable con niños y otros animales. Le gusta tomar siestas cortas para no perderse de ninguna aventura."
 }
 
 export const people = [
