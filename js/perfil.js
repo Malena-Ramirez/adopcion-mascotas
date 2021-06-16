@@ -2,8 +2,8 @@ const form = document.querySelector("#profile-form");
 
 printHTML = () => {
     const person = JSON.parse(localStorage.getItem("Person"));
-    const editName = document.querySelector(".name-profile");
     if (person) {
+        const editName = document.querySelector(".name-profile");
         editName.innerHTML = `${person.name} ${person.lastName}`;
         document.querySelector("#name").value = `${person.name}`;
         document.querySelector("#last-name").value = `${person.lastName}`;
