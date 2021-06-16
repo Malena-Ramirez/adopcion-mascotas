@@ -25,4 +25,4 @@ Puedes verlo [aquí] (https://adopciondemascotas.netlify.app).
 
 ## 🌟 Autor
 
-* **Malena Ramírez Uribe** - [@Malena-Ramirez](https://github.com/Malena-Ramirez)
+**Malena Ramírez Uribe** - [@Malena-Ramirez](https://github.com/Malena-Ramirez)
