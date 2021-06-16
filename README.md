@@ -1,13 +1,10 @@
 # 💎 App de adopción
 
-
-Crea una nueva historia&nbsp; &nbsp; &nbsp;&nbsp;
+Crea una nueva historia.
 
 Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.
 
-
-Puedes verlo aquí: https://adopciondemascotas.netlify.app/
-
+Puedes verlo [aquí] (https://adopciondemascotas.netlify.app).
 
 ## 🔍 Vistas 
 
@@ -28,4 +25,4 @@ Puedes verlo aquí: https://adopciondemascotas.netlify.app/
 
 ## 🌟 Autor
 
-* **Malena Ramírez Uribe**  - [@Malena-Ramirez](https://github.com/<Malena-Ramirez>)
+* **Malena Ramírez Uribe** - [@Malena-Ramirez](https://github.com/Malena-Ramirez)
