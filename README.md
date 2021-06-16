@@ -6,36 +6,25 @@ Crea una nueva historia&nbsp; &nbsp; &nbsp;&nbsp;
 Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.
 
 
-Puedes verlo aquí: <link_para_ver>
+Puedes verlo aquí: https://adopciondemascotas.netlify.app/
 
-## Requerimientos
-
-<qué requiere tu programa>
-
-```shell
-ejemplo de cómo instalar lo que requiero si es muy específico
-```
-
-## 🔥 Instalación
-
-```shell
-<escribe aquí cómo lo ejecuto>
-<aquí si necesito ejecutar otra cosa>
-```
 
 ## 🔍 Vistas 
 
 ### 💻 Desktop
 
-<imagen aquí>
+![Vista desktop](/img/vista_desktop.jpg)
 
 ### 📱 Mobile
 
-<imagen aquí>
+![Vista mobile](/img/vista_mobile.jpg)
 
 ## 📌 Stack
 
-<escribe aquí>
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
 
 ## 🌟 Autor
 
